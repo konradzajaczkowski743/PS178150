@@ -3,9 +3,9 @@
 
 int main()
 {
-    int a,b,c;
+    float a,b,c;
     printf("Wprowadz trzy liczby: ");
-    scanf("%d %d %d", &a ,&b, &c);
+    scanf("%f %f %f", &a ,&b, &c);
     float licznik = b- 2*c;
     float mianownik = 4 + a;
     float wynik = licznik/mianownik;
