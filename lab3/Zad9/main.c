@@ -6,9 +6,7 @@ int calculateFactorialRecursively(int n)
     if(n==0){
         return 1;
     }
-    else{
-        return n*calculateFactorialRecursively(n-1);
-    }
+    return n*calculateFactorialRecursively(n-1);
 }
 int main()
 {
