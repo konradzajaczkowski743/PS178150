@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1709151059 source:c:\users\konrad\documents\ps\zadaniapetle\zad2\main.c
+	<stdio.h>
+	<stdlib.h>
+
