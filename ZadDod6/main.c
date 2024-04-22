@@ -21,5 +21,3 @@ int main()
     printf("%d", funkcjaMale("SSSabcdeHHHKHgH"));
     return 0;
 }
-
-
