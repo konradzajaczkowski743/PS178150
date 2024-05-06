@@ -1,22 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-void sortowanie(int n,int tab[])
-{
-    int temp = 0;
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n;j++)
-        {
-            if(tab[j-1]>tab[j])
-            {
-                temp = tab[j];
-                tab[j] = tab[j-1];
-                tab[j-1] = temp;
-            }
-        }
-    }
-}
-
 void sortRows(int n, int m, int **tab)
 {
 
