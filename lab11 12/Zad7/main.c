@@ -7,12 +7,11 @@ struct Car {
     int  mileage;
 };
 
-struct Car * initCar(char brand2[], int mileage2){
-    struct Car * wsk = malloc(sizeof(struct Car));
-    //(*wsk).age = age2;
-    wsk -> mileage = mileage2;
-    strcpy(wsk -> brand, brand2);
-    return wsk;
+struct Car initCar(char brand2[20], int mileage2){
+    struct Car temp;
+    strcpy(temp.brand, brand2);
+    temp.mileage = mileage2;
+    return temp;
 };
 
 void showCar(struct Car arg){
@@ -26,9 +25,9 @@ void mileageService(struct Car * wsk){
 
 int main()
 {
-    struct Car * Auto = initCar("skoda", 200000);
-    showCar(*Auto);
-    mileageService(Auto);
-    showCar(*Auto);
+    struct Car Auto = initCar("skoda", 200000);
+    showCar(Auto);
+    mileageService(&Auto);
+    showCar(Auto);
     return 0;
 }
